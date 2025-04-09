@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - Ankit Bhagat</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #3498db, #2c3e50);
+        color: #fff;
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #f1c40f;
+      }
+
+      .courses-section {
+        padding: 60px 0;
+      }
+
+      .courses-section h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .course-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .course-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .course-card h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #f1c40f;
+      }
+
+      .course-card p {
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #f1c40f;
+        color: #2c3e50;
+        padding: 8px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+          background: none;
+          border: none;
+          color: #fff;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .mobile-menu-btn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">Ankit Bhagat</div>
+        <button class="mobile-menu-btn">☰</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav>
+
+      <section class="courses-section">
+        <h1>My Courses</h1>
+        <div class="course-grid">
+          <div class="course-card">
+            <h3>Full Stack Web Development</h3>
+            <p>
+              Master the MERN stack (MongoDB, Express, React, Node.js) and build
+              complete web applications from scratch.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+          <div class="course-card">
+            <h3>React Masterclass</h3>
+            <p>
+              Learn React.js with hooks, context API, and advanced patterns to
+              build modern, scalable applications.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+          <div class="course-card">
+            <h3>Node.js & Express</h3>
+            <p>
+              Build robust backend services and RESTful APIs with Node.js and
+              Express framework.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+          <div class="course-card">
+            <h3>Database Design</h3>
+            <p>
+              Learn relational and NoSQL database design principles and
+              implementation.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

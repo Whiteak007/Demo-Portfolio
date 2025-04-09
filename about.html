@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Ankit Bhagat</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #3498db, #2c3e50);
+        color: #fff;
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #f1c40f;
+      }
+
+      .about-section {
+        padding: 60px 0;
+      }
+
+      .about-section h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .about-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .about-image {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 50px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .about-text {
+        flex: 1;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #f1c40f;
+      }
+
+      .about-text p {
+        margin-bottom: 20px;
+      }
+
+      .team-section h2 {
+        font-size: 28px;
+        margin: 40px 0 20px;
+        text-align: center;
+        color: #f1c40f;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .team-member {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid #f1c40f;
+      }
+
+      .team-member h3 {
+        margin-bottom: 10px;
+      }
+
+      .team-member p {
+        color: #f1c40f;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .about-image {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+          background: none;
+          border: none;
+          color: #fff;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .mobile-menu-btn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">Ankit Bhagat</div>
+        <button class="mobile-menu-btn">☰</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav>
+
+      <section class="about-section">
+        <h1>About Us</h1>
+
+        <div class="about-content">
+          <img
+            src="https://whiteak007.github.io/Portfolio-Website/my-personal-image-fhd.jpg"
+            alt="Ankit Bhagat"
+            class="about-image"
+            onerror="this.src='https://via.placeholder.com/300'"
+          />
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>
+              Founded in 2020, our mission is to provide high-quality education
+              in web development and help aspiring developers build successful
+              careers in tech.
+            </p>
+            <p>
+              With years of industry experience, we understand the skills needed
+              to thrive in today's competitive job market. Our courses are
+              designed to give you practical, hands-on experience with
+              real-world projects.
+            </p>
+            <p>
+              We believe in learning by doing, and our curriculum reflects that
+              philosophy. Whether you're a complete beginner or an experienced
+              developer looking to upskill, we have something for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-section">
+          <h2>Meet Our Team</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img
+                src="https://whiteak007.github.io/Portfolio-Website/my-personal-image-fhd.jpg"
+                alt="Team Member"
+              />
+              <h3>Ankit Bhagat</h3>
+              <p>Founder & Lead Instructor</p>
+            </div>
+            <div class="team-member">
+              <img
+                src="https://whiteak007.github.io/learn-programming-with-us/images/team-1.jpg"
+                alt="Team Member"
+              />
+              <h3>Suraj Kumar</h3>
+              <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img
+                src="https://whiteak007.github.io/learn-programming-with-us/images/team-2.jpg"
+                alt="Team Member"
+                />
+                <h3>Utkarsh Kumar</h3>
+                <p>Backend Developer</p>
+            </div>
+            <div class="team-member">
+                <img
+                src="https://whiteak007.github.io/learn-programming-with-us/images/team-3.jpg"
+                alt="Team Member"
+              />
+              <h3>Subham Kumar</h3>
+              <p>UI/UX Designer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
